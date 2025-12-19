@@ -26,17 +26,46 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 **Procedure**
 
 /* write all the steps invloved */
+All D flip-flops in the circuit are connected to a common clock (CLK), ensuring synchronous operation.
+
+Each D flip-flop has:
+
+D (Data) input – to receive the data,
+
+CLK (Clock) input – to control when data is stored,
+
+Q output – which holds the stored data.
+
+The Q output of each flip-flop is connected to the D input of the next flip-flop, forming a cascade (shift register structure).
+
+When the clock signal rises (active clock edge):
+
+The input data is sampled and stored in the first flip-flop.
+
+On each subsequent clock pulse:
+
+The data stored in one flip-flop is transferred to the next flip-flop in the sequence.
+
+Thus, the data shifts from one stage to the next in a coordinated manner.
+
+Because all flip-flops operate on the same clock edge, data shifting occurs simultaneously and synchronously throughout the circuit.
 
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:
+Developed by:G.Muthu Manikkam RegisterNumber:25016274
 
 */
+<img width="465" height="383" alt="Screenshot 2025-12-19 180406" src="https://github.com/user-attachments/assets/b742e6a5-a547-48e7-8497-a711ddea4196" />
+
 
 **RTL LOGIC FOR SISO Shift Register**
+<img width="1307" height="903" alt="exp10(RTL Program)" src="https://github.com/user-attachments/assets/d7edef83-f093-4f9c-925f-b9247ce5980b" />
+
 
 **TIMING DIGRAMS FOR SISO Shift Register**
+<img width="1919" height="1014" alt="Screenshot 2025-12-19 181432" src="https://github.com/user-attachments/assets/6c5f08a6-76f2-494f-9071-a1189cc662de" />
 
 **RESULTS**
+ Thus the Serial-In Serial-Out shift register is implemented and verified.
